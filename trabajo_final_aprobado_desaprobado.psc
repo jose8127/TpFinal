@@ -1,9 +1,10 @@
-Algoritmo mayor_o_menor
-	definir cantidadpersonas Como Entero
-	definir opcionmenu Como Entero
+Algoritmo aprobado_desaprobado
+	definir cantidadpersonas, opcionmenu Como Entero
 	Repetir
+		Escribir "Bienvenido al sistema de notas de los alumnos"
+		Escribir " "
 		escribir "desea ingresar notas y nombres de alumnos?"
-		Escribir " 1 - Si | 2 - NO"
+		Escribir " 1 - Si | 2 - No"
 		leer opcionmenu
 		si opcionmenu > 2
 			Escribir "Error digito invalido"
@@ -27,10 +28,10 @@ Algoritmo mayor_o_menor
 				
 				Para M<-1 hasta cantidadpersonas con paso 1 Hacer
 					Si notas[M] >= 7 y notas[M]<=10 Entonces
-						Escribir "el alumno ", nombres[M], " aprobo"
+						Escribir "el alumno ", nombres[M], " aprobó"
 					Fin Si
 					Si notas[M] >= 0 y notas[M] < 7 Entonces
-						Escribir "el alumno ", nombres[M], " desaprobo"
+						Escribir "el alumno ", nombres[M], " desaprobó"
 					Fin Si
 					si notas[M]>10 o notas[M]<0
 						Escribir "Nota invalida"						
@@ -38,7 +39,7 @@ Algoritmo mayor_o_menor
 				FinPara
 				
 				
-				Escribir "Continuar ingresando alumnos?"
+				Escribir "Desea continuar ingresando alumnos?"
 				Escribir "1: Si | 2: No " Sin Saltar
 				Leer opcionmenu
 				
